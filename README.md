@@ -44,6 +44,15 @@
 
 ---
 
+## Wiring Diagram
+
+![Wiring diagram](docs/wiring.svg)
+
+> Pots take **3.3 V** from ESP32; servos take **5 V** from an external PSU.  
+> **Common ground** between ESP32, Pico 2 W, and the servo PSU is required.  
+> Bluetooth transport is **Classic SPP**: ESP32 sends `ANG:a,b,c,d`.
+
+
 ## How to Run
 
 1. Flash the **Pico 2 W** sketch first. It advertises as `PICO2W_SPP`.  
